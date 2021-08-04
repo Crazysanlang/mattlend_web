@@ -3,7 +3,7 @@ import { MessageBox, Message } from 'element-ui'
 import store from '@/store'
 import { getToken } from '@/utils/auth'
 const service = axios.create({
-  baseURL: '/', // url = base url + request url
+  baseURL: 'http://139.9.179.19:3009/', // url = base url + request url
   timeout: 5000 // request timeout
 })
 service.interceptors.request.use(
